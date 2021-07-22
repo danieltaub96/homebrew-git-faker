@@ -5,28 +5,28 @@
 class GitFaker < Formula
   desc ""
   homepage ""
-  version "0.0.7"
+  version "0.0.8"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "http://github.com/danieltaub96/git-faker/releases/v0.0.7/git-faker_0.0.7_darwin_amd64.tar.gz", :using => GitHubGitDownloadStrategy.
-      sha256 "9e1486e24d0b8dff48529a0a59318e861d5dd36098a027bf6953c15d4d093649"
+      url "http://github.com/danieltaub96/git-faker/releases/download/v0.0.8/git-faker_0.0.8_darwin_amd64.tar.gz", :using => GitHubGitDownloadStrategy.
+      sha256 "1a1bcc015caabf4af65a026b789a2e399c5ad02e475f8ae4583dbc165fee5a58"
     end
     if Hardware::CPU.arm?
-      url "http://github.com/danieltaub96/git-faker/releases/v0.0.7/git-faker_0.0.7_darwin_arm64.tar.gz", :using => GitHubGitDownloadStrategy.
-      sha256 "20517d62756c108b05abff608f25a2e14c6874f3432fd010a898082f91fe3257"
+      url "http://github.com/danieltaub96/git-faker/releases/download/v0.0.8/git-faker_0.0.8_darwin_arm64.tar.gz", :using => GitHubGitDownloadStrategy.
+      sha256 "90c89ccaf3991b3d33ae062265ec79c6bfb191f2d9f3f30cb26d2585bc2ecdcf"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "http://github.com/danieltaub96/git-faker/releases/v0.0.7/git-faker_0.0.7_linux_amd64.tar.gz", :using => GitHubGitDownloadStrategy.
-      sha256 "713b78d417760dc4af29c98f0fdddd1fd04b73326024406e739e35d66c923b1a"
+      url "http://github.com/danieltaub96/git-faker/releases/download/v0.0.8/git-faker_0.0.8_linux_amd64.tar.gz", :using => GitHubGitDownloadStrategy.
+      sha256 "354098874208365465c392ba136e4095930c21555511a8b2a5d82b37f33c2ba9"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "http://github.com/danieltaub96/git-faker/releases/v0.0.7/git-faker_0.0.7_linux_arm64.tar.gz", :using => GitHubGitDownloadStrategy.
-      sha256 "39c667ad1214f595b2493b223f717d9c8bdf135eef71785a9f09f1202cca28fa"
+      url "http://github.com/danieltaub96/git-faker/releases/download/v0.0.8/git-faker_0.0.8_linux_arm64.tar.gz", :using => GitHubGitDownloadStrategy.
+      sha256 "722b15f9089e4e1855607e41c368e2306d062b76ae43b53e5c3221b2a878ff1b"
     end
   end
 
