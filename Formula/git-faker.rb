@@ -1,4 +1,4 @@
-class Speedtest < Formula
+class GitFaker < Formula
   desc "Ookla Speedtest"
   homepage "https://speedtest.net/apps/cli"
   url "https://install.speedtest.net/app/cli/ookla-speedtest-1.0.0-macosx.tgz"
